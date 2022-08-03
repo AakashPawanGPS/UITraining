@@ -1,0 +1,102 @@
+/* html{
+    height: 100%;
+} */
+body{
+    background-color: #2f3035;
+    background-image: url(images/foodbg2.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.container{
+    margin-left: auto;
+    margin-right: auto;
+    width: 1024px;
+}
+
+header{
+    height: 100px;
+    text-align: center;
+}
+
+nav{
+    background-color: rgba(0, 0, 0,0.51);
+    /* height: 40px; */
+    text-align: center;
+    margin-top: 15px;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    position: sticky;
+    top: 0px;
+}
+
+nav a{
+    text-decoration: none;
+    font-size: 12px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+main{
+    /* height: 400px;  */
+    text-align: center;
+    padding-top: 80px;
+    padding-bottom: 120px;
+    padding-left: 240px;
+    padding-right: 240px;
+}
+
+h1{
+    font-size: 84px;
+    color: aliceblue;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.meat{
+    color: rgba(255,255,255,0.03);
+}
+
+.meat:hover{
+    color: aliceblue;
+}
+
+p{
+    font-size: 18px;
+    color: aliceblue;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a{
+    color: aliceblue;
+    font-family: Arial, Helvetica, sans-serif;
+    /* text-decoration: none; */
+}
+
+.map{
+    padding-bottom: 50px;
+}
+
+.map1{
+    padding-bottom: 50px;
+}
+
+footer{
+    background-color: rgba(0, 0, 0,0.81);
+    margin-top: 70px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+footer p{
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 12px;
+    text-align: center;
+}
+
+img{
+    width: 10%;
+    height: auto;
+    background-color: aliceblue;
+    border-radius: 50%;
+}
+
+
