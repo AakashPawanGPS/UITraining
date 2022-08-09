@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" name="" id="key">Key
+    <input type="text" name="" id="value">value
+    <button onclick="storeData()">Store Data</button>
+
+    <input type="text" name="" id="key2">
+    <button onclick="getData()">Get Data</button>
+    <button onclick="clearStorage()">Clear Storage</button>
+    <button onclick="del()">Remove Item</button>
+
+    <p id="output"></p>
+
+    <script>
+        function storeData(){
+            var key = document.getElementById("key").value;
+            var value = document.getElementById("value").value;
+
+            localStorage.setItem(key,value);
+        }
+        getData = () => {
+            var key = document.getElementById("key2").value;
+            document.getElementById("output").innerHTML = localStorage.getItem(key);
+        }
+
+        clearStorage = () => {
+            localStorage.clear();
+        }
+
+        del = () => {
+            var key2 = document.getElementById("key2").value;
+            localStorage.removeItem(key2)
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Local Storage</title>
+</head>
+<body>
+    Key   : <input type="text" name="key" id="key">
+    Value : <input type="text" name="value" id="value">
+
+    Get Value : <input type="text" name="getValue" id="getVal">
+    Key to Remove : <input type="text" name="remIt" id="remIt">
+
+    <br>
+    <div>
+        <button onclick="setIt()">Set Key Value</button>
+        <button onclick="getVal()">Get Value</button>
+        <button onclick="removeIt()">Remove Item</button>
+        <button onclick="clearStorage()">Clear Storage</button>
+    </div>
+
+    <p class="output" id="output-key"></p>
+    <p class="output" id="output-value"></p>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

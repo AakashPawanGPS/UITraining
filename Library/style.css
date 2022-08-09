@@ -1,0 +1,100 @@
+html{
+   background-image: linear-gradient(rgb(241, 156, 156),rgb(147, 147, 173));
+}
+
+body{
+   background-image: url(images/image-lion-background.png);
+   background-position: top center; 
+   background-repeat: no-repeat;
+   font-family: 'Roboto', sans-serif;
+   color: white;
+   font-size: 1.125rem;
+}
+
+.container{
+   width: 1024px;
+   min-height: 300px;
+   margin-left: auto;
+   margin-right: auto;
+}
+
+header{
+   display: flex;
+   justify-content: space-between;
+   min-height: 100px;
+   align-items: center;
+   margin-top: 20px;
+}
+
+main{
+   display: flex;
+   min-height: 300px;
+   align-items: center;
+}
+
+.herobox1{
+   flex:2;
+   padding-right: 100px;
+}
+.herobox2{
+   flex: 1;
+}
+
+h1{
+   font-size: 2.5rem;
+   font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+   margin-bottom: 1rem;
+}
+h2{
+   font-size: 1.5rem;
+   font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+   margin-top: 20px;
+}
+
+p{
+   line-height: 1.75rem;
+   margin-bottom: 0.5rem;
+}
+
+.cards{
+   display: flex;
+   justify-content: space-between;
+   min-height: 300px;
+   text-align: center;
+}
+
+.cards p{
+   font-size: 1rem;
+   line-height: 1.2rem;
+}
+
+.cards a{
+   text-decoration: none;
+   color: aliceblue;
+}
+
+.card1{
+   background-image: url(images/library_banner_1.jpg);
+   width: 30%;
+   height: 18rem;
+}
+.card2{
+   background-image: url(images/library_banner_2.jpg);
+   width: 30%;
+   height: 18rem;
+}
+.card3{
+   background-image: url(images/library_banner_3.jpg);
+   width: 30%;
+   height: 18rem;
+}
+
+.card1, .card2, .card3{
+   padding: 30px 30px 20px 30px;
+   box-sizing: border-box;
+}
+
+i{
+   padding-top: 20px;
+   font-size: 100px;
+}

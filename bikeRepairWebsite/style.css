@@ -11,6 +11,11 @@ body{
    font-size: 1.125rem;
 }
 
+a{
+   color: aliceblue;
+   text-decoration: none;
+}
+
 .container{
    width: 1024px;
    min-height: 300px;
@@ -24,6 +29,8 @@ header{
    min-height: 100px;
    align-items: center;
    margin-top: 20px;
+   padding-bottom: 20px;
+   border-bottom: 1px solid aliceblue ;
 }
 
 main{
@@ -44,6 +51,8 @@ h1{
    font-size: 2.5rem;
    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
    margin-bottom: 1rem;
+   color: rgb(47, 83, 112);
+   text-shadow: 3px 3px 8px rgba(32, 27, 27, 0.459);
 }
 h2{
    font-size: 1.5rem;
@@ -52,7 +61,7 @@ h2{
 }
 
 p{
-   line-height: 1.75rem;
+   line-height: 1.25rem;
    margin-bottom: 0.5rem;
 }
 
@@ -77,16 +86,19 @@ p{
    background-image: url(images/image-background-card1.jpg);
    width: 30%;
    height: 18rem;
+   box-shadow: 3px 3px 13px rgba(47, 83, 112, 0.5);
 }
 .card2{
    background-image: url(images/image-background-card2.jpg);
    width: 30%;
    height: 18rem;
+   box-shadow: 3px 3px 13px rgba(47, 83, 112, 0.5);
 }
 .card3{
    background-image: url(images/image-background-card3.jpg);
    width: 30%;
    height: 18rem;
+   box-shadow: 3px 3px 13px rgba(47, 83, 112, 0.5);
 }
 
 .card1, .card2, .card3{
@@ -97,4 +109,70 @@ p{
 i{
    padding-top: 20px;
    font-size: 100px;
+}
+
+a.mybutton{
+   font-size: 15px;
+   background-color: aliceblue;
+   border-radius: 5px;
+   padding: 10px;
+   display: inline-block;
+   margin-top: 10px;
+   color: rgb(241, 156, 156);
+   box-shadow: 3px 3px 8px rgba(209, 123, 123, 0.459);
+}
+
+a.mybutton:hover{
+   background-color: rgb(47, 83, 112);
+   transition-duration: 0.5s;
+}
+
+.navbutton{
+   padding: 6px 15px;
+   border: 1px solid white;
+   position: relative;
+   display: inline-block;
+}
+
+.testimonials{
+   display: flex;
+   flex-wrap: wrap;
+   margin-bottom: 100px;
+   justify-content: space-between;
+}
+
+.tbox{
+   font-size: 1rem;
+   width: 43%;
+   border: 1px solid aliceblue;
+   margin-top: 50px;
+   padding: 30px 20px;
+}
+
+.tbox p:last-of-type{
+   padding-left: 30px;
+   font-size: 0.8rem;
+}
+
+.dropdown{
+   display: none;
+   position: absolute;
+   z-index: 1;
+   padding-top: 15px;
+   text-align: center;
+   margin-left: -16px;
+}
+
+.navbutton:hover .dropdown{
+   display: block;
+}
+
+.dropdown .navbutton{
+   width: 98px;
+   background-color: aliceblue;
+}
+
+.dropdown .navbutton a{
+   color: rgb(47, 83, 112);
+   font-size: 15px;
 }

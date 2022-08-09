@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Storage Demo</title>
+</head>
+<body>
+    
+    <h1>Welcome</h1>
+    <button id="clr">Clear</button>
+    <button id="add">Add</button>
+
+    <script>
+
+    var del=document.querySelector('#clr')
+    var btn=document.querySelector('#add')
+    var title=document.querySelector("h1")
+    btn.onclick=function(){
+        userDetails();
+    }
+
+    if(!localStorage.getItem("username")){
+        localStorage.clear();
+    } 
+    else{
+        prompt("No Items in Local Storage")
+    }
+
+    del.onclick = () => {
+        localStorage.clear();
+    }
+
+    function userDetails(){
+        var name=prompt("please enter your Name")
+
+        localStorage.setItem('username',name)
+        title.textContent="welcome  " +name
+    }
+
+    if(!localStorage.getItem("username")){
+        userDetails()
+    }
+    else{
+        var name=localStorage.getItem('username')
+
+    }
+    </script>
+</body>
+</html>
