@@ -73,7 +73,8 @@ p{
 }
 
 .cards p{
-   font-size: 1rem;
+   margin: 10px 0px;
+   font-size: 0.9rem;
    line-height: 1.2rem;
 }
 
@@ -134,6 +135,11 @@ a.mybutton:hover{
    display: inline-block;
 }
 
+.navbutton:hover{
+   background-color: rgb(47, 83, 112);
+   transition-duration: 0.5s;
+}
+
 .testimonials{
    display: flex;
    flex-wrap: wrap;
@@ -175,4 +181,35 @@ a.mybutton:hover{
 .dropdown .navbutton a{
    color: rgb(47, 83, 112);
    font-size: 15px;
+}
+
+.dropdown .navbutton:hover{
+   background-color: rgb(241, 156, 156);
+   transition-duration: 0.5s;
+}
+
+.inputBox{
+   margin: 10px 0px; 
+   font-size: 0.9rem;
+}
+
+.contact-us-main{
+   margin: 10px 0px;
+}
+
+input[type=text], input[type=email], textarea{
+   width: 100%;
+   display: block;
+   padding:10px ;
+   box-sizing: border-box;
+}
+
+input[type=radio]{
+   margin-right: 3px;
+   padding-right: 10px;
+}
+
+.newline{
+   display: block;
+   margin-bottom: 10px;
 }
