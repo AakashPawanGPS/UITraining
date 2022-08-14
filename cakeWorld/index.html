@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="#"><img src="assets/cake.png" alt=""></a>
+            <p>Cake World</p>
+        </header>
+
+        <div class="mainWrap">
+            <div class="leftSide">
+                <h3>Prices</h3>
+                <p>Chocolate-----300</p>
+                <p>Strawberry----100</p>
+                <p>Butterscotch--200</p>
+                <p>Vannila--------250</p>
+                <p>RedVelvet-----350</p>
+            </div>
+            <div class="middle" id="middle">
+                <div id="tar"></div>
+            </div>
+            <div class="rightSide" id="rightSide">
+                <h3>Bill</h3>
+            </div>
+        </div>
+        <div class="buttons">
+            <button onclick="addFlavour('chocolate')" class="button" id="chocolate">Chocolate</button>
+            <button onclick="addFlavour('strawberry')" class="button" id="strawberry">Strawberry</button>
+            <button onclick="addFlavour('butterscotch')" class="button" id="butterscotch">Butterscotch</button>
+            <button onclick="addFlavour('vannila')" class="button" id="vannila">Vannila</button>
+            <button onclick="addFlavour('redvelvet')" class="button" id="redvelvet">RedVelvet</button>
+            <button onclick="calTotal()" class="button" id="buy">Buy</button>
+            <button onclick="reset()" class="button" id="reset">Reset</button>
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
