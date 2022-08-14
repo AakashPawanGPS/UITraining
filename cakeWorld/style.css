@@ -63,10 +63,12 @@ button{
 
 #buy{
     background-color: rgb(105, 196, 105);
+    color: aliceblue;
 }
 
 #reset{
     background-color: rgb(240, 74, 74);
+    color: aliceblue;
 }
 
 .middle{
@@ -88,4 +90,9 @@ button{
 
 #cakeBlock{
     border-radius: 5px;
+}
+
+#candle{
+    transform: rotate(180deg);
+    width: 50px;
 }

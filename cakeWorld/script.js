@@ -14,28 +14,28 @@ function createDiv(flavour){
     switch(flavour){
         case "chocolate":
             a.style.backgroundColor = "brown"
-            a.style.width="100px"
-            a.style.height="15px"
+            a.style.width="200px"
+            a.style.height="20px"
             break
         case "strawberry":
             a.style.backgroundColor = "pink"
-            a.style.width="80px"
-            a.style.height="15px"
+            a.style.width="170px"
+            a.style.height="20px"
             break
         case "butterscotch":
             a.style.backgroundColor = "yellow"
-            a.style.width="60px"
-            a.style.height="15px"
+            a.style.width="140px"
+            a.style.height="20px"
             break
         case "vannila":
             a.style.backgroundColor = "aliceblue"
-            a.style.width="40px"
-            a.style.height="15px"
+            a.style.width="115px"
+            a.style.height="20px"
             break
         case "redvelvet":
             a.style.backgroundColor = "red"
-            a.style.width="20px"
-            a.style.height="15px"
+            a.style.width="95px"
+            a.style.height="20px"
             break
     }
     return a;
@@ -159,11 +159,22 @@ function addFlavour(flavour){
 //     target.appendChild(redvelvet)
 // }
 
+
+  
+//   image.setAttribute('alt', 'nature');
+  
+//   image.setAttribute('height', 350); // 👈️ height in px
+//   image.setAttribute('width', 550); // 👈️ width in px
+
 function calTotal(){
     var cho = document.createElement('p')
     cho.innerHTML = "Total : " + total
     cho.style.color="green"
     document.getElementById("rightSide").appendChild(cho)
+    var candle = document.createElement('img')
+    candle.setAttribute('src','assets/candle.png')
+    candle.setAttribute('id','candle')
+    target.appendChild(candle)
 }
 
 function reset(){
