@@ -33,20 +33,25 @@ header{
 
 .main-content{
     flex: 2;
+    padding-right: 1.5rem;
 }
 
 .main-content h3{
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: rgba(36, 129, 205, 0.801);
 }
 
 .main-content p {
-    margin-top: -1rem;
+    margin-top: -0.5rem;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgb(9, 49, 81);
 }
 
 .aside{
     flex: 1;
     padding: 2rem;
+    border-left: 1px solid rgba(228, 133, 133, 0.779);
+    margin-right: -2rem;
 }
 
 input{
@@ -80,4 +85,15 @@ label{
 .button:hover{
     color: rgba(181, 106, 137, 0.712);
     background-color: aliceblue;
+}
+
+hr{
+    margin-top: 3rem;
+}
+
+#date{
+    float: right;
+    font-size: 0.8rem;
+    color: gray;
+    margin-top: 0.2rem;
 }
