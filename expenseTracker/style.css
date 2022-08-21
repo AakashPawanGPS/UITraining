@@ -1,0 +1,107 @@
+body{
+    background-image: linear-gradient(rgb(181, 106, 137),rgb(117, 147, 184));
+    background-attachment: fixed;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+header{
+    text-align: center;
+    padding: 1rem;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+
+.item{
+    padding: 0.3rem 1rem;
+}
+
+.left{
+    grid-column: 1/2;
+}
+
+.middle{
+    grid-column: 2/3;
+    background-color: aliceblue;
+    /* height: 100px; */
+    width: 80%;
+    border: 1px solid gray;
+    box-shadow: 2px 2px 5px rgba(18, 0, 0, 0.557);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.right{
+    grid-column: 3/4;
+}
+
+#total{
+    font-size: 2rem;
+    margin-top: -1rem;
+    font-weight: 400;
+    font-style: italic;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.split{
+    width: 80%;
+    display: flex;
+    margin-top: -1rem;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: space-evenly;
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.12), -1px -1px 2px rgba(0, 0, 0, 0.24);
+    z-index: 1;
+    text-align: center;
+}
+
+.amount{
+    margin-top: -0.5rem;
+    font-size: 1.5rem;
+}
+
+#incomeAmount{
+    color: green;
+}
+
+#expenseAmount{
+    color: crimson;
+}
+
+.text{
+    font-weight:bold;
+}
+
+#addTrans{
+    font-weight: bolder;
+    border-bottom: 1px solid grey;
+    padding: 0.6rem 0;
+}
+
+label{
+    font-size: 0.87rem;
+}
+
+input{
+    width: 100%;
+    padding: 0.5rem 0;
+    margin: auto;
+    display: block;
+    margin-top: 0.4rem;
+    margin-bottom: 0.6rem;
+}
+
+button{
+    width: 100%;
+    padding: 0.7rem 0;
+    display: block;
+    margin: auto;
+    background-color: rgb(154, 93, 212);
+    color: aliceblue;
+    border: none;
+    margin: 1rem 0;
+}
