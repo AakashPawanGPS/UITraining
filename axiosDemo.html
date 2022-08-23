@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Axios</title>
+</head>
+<body>
+    <button onclick="getData()">Get Data</button>
+    <button onclick="putData()">Put Data</button>
+    <button onclick="postData()">Post Data</button>
+    <button onclick="deleteData()">Delete</button>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.27.2/axios.min.js" integrity="sha512-odNmoc1XJy5x1TMVMdC7EMs3IVdItLPlCeL5vSUPN2llYKMJ2eByTTAIiiuqLg+GdNr9hF6z81p27DArRFKT7A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        function getData(){
+            axios.get("https://63046ead761a3bce77e78bc0.mockapi.io/corestack/")
+            .then(res=>{
+                console.log(res);
+            })
+            .catch(err=>console.log(err))
+        }
+        function putData(){
+            axios.put("https://63046ead761a3bce77e78bc0.mockapi.io/corestack/5",{
+                name:"Aakash"
+            })
+            .then(res=>{
+                console.log(res);
+            })
+            .catch(err=>console.log(err))
+        }
+        function postData(){
+            axios.post("https://63046ead761a3bce77e78bc0.mockapi.io/corestack/",{
+                name:"Aakash"
+            })
+            .then(res=>{
+                console.log(res);
+            })
+            .catch(err=>console.log(err))
+        }
+        function deleteData(){
+            axios.delete("https://63046ead761a3bce77e78bc0.mockapi.io/corestack/3")
+            .then(res=>{
+                console.log(res);
+            })
+            .catch(err=>console.log(err))
+        }
+    </script>
+</body>
+</html>
