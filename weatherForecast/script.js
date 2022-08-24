@@ -6,6 +6,12 @@ var clouds = document.querySelector('.clouds');
 var button = document.querySelector('.submit');
 var minmax = document.querySelector('.min-max')
 
+input.addEventListener('keypress',function(event){
+    if(event.key === "Enter"){
+        button.click()
+    }
+})
+
 
 button.addEventListener('click', function (name) {
     fetch('https://api.openweathermap.org/data/2.5/weather?q=' + input.value + '&appid=8922527e6ab47a6b694a73decdd12e86&units=metric')
@@ -22,7 +28,7 @@ button.addEventListener('click', function (name) {
             desc.innerHTML = descValue;
             temp.innerHTML = "Temp - " + tempValue;
             input.value = "";
-            minmax.innerHTML = `${minVal} °C- ${maxVal} °C`
+            minmax.innerHTML = `${minVal} °c - ${maxVal} °c`
         })
 
         .catch(err => alert("Wrong city name!"));

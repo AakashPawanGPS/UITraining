@@ -10,7 +10,6 @@ body{
 }
 
 header{
-  width: 100%;
   background-color: rgba(240, 248, 255, 0.628);
   padding: 1rem;
   margin-bottom: 1rem;
@@ -51,6 +50,6 @@ input[type=submit]:hover{
   border-radius: 2rem;
 }
 
-.container > * {
-  padding: 1rem;
+.container * {
+  padding: 0.6rem;
 }
