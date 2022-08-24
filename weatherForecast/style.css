@@ -1,0 +1,56 @@
+*{
+  margin: 0;
+}
+
+body{
+  background-image: linear-gradient(rgba(120, 120, 209, 0.877),rgb(140, 192, 99));
+  background-attachment: fixed;
+  text-align: center;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+header{
+  width: 100%;
+  background-color: rgba(240, 248, 255, 0.628);
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+header h3{
+  margin: 0.6rem;
+}
+
+input{
+  padding: 0.8rem;
+  border-radius: 2rem;
+  border: 1px solid wheat;
+  box-shadow: 2px 2px 2px rgba(12, 12, 20, 0.493);
+}
+
+input[type=text]{
+  padding-right: 10rem;
+}
+/* 
+input[type=submit]{
+  cursor: pointer;
+} */
+input[type=submit]:hover{
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.014);
+  color: white;
+}
+
+.container{
+  background-color: rgba(0, 255, 255, 0.114);
+  box-shadow: 2px 2px 2px rgba(12, 12, 20, 0.493);
+  margin: 1rem;
+  padding: 1rem;
+  width: 30%;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 2rem;
+}
+
+.container > * {
+  padding: 1rem;
+}

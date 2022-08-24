@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p>Lorem ipsum dolor simos deleniti perspiciatis, officiis quod, aperiam ratione esse labore etate nemo!</p>
+    <p class="para">it, amet consectetur adipisicing elit. Laudantium consectetur corrupti digniss</p>
+    <p class="para">xercitationem sapiente molestias quisquam! Omnis et impedit accusantium cupidi</p>
+
+    <h1 id="demo"></h1>
+    <script>
+        const x = document.querySelectorAll(".para")
+        console.log(x);
+
+        document.querySelector("#demo").innerHTML = x[0].innerHTML+x[1].innerHTML
+    </script>
+</body>
+
+</html>
