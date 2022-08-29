@@ -1,0 +1,28 @@
+body{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+h1{
+    text-align: center;
+}
+
+input{
+    padding: 0.6rem 1rem;
+}
+
+form{
+    width: 30%;
+    margin: 0 auto;
+}
+
+button{
+    width: 10%;
+    padding: 0.6rem 1rem;
+    position: absolute;
+    left: 50%;
+}
+
+label{
+    display: flex;
+    justify-content: space-around;
+}

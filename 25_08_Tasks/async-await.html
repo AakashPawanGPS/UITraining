@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Async Await</title>
+</head>
+
+<body>
+    <h1>Async Await</h1>
+    <script>
+
+        //Example 1
+
+        async function sayHi() {
+            return Promise.resolve('Hi');
+        }
+
+        async function display() {
+            let result = await sayHi();
+            console.log(result);
+        }
+
+        display()
+
+        //Example 2
+
+        function helloWorld() {
+            return new Promise(resolve => {
+                setTimeout(() => {
+                    resolve('Hello World!');
+                }, 2000);
+            });
+        }
+
+        const msg = async function () { //Async Function Expression
+            const msg = await helloWorld();
+            console.log('Message:', msg);
+        }
+
+        const msg1 = async () => { //Async Arrow Function
+            const msg = await helloWorld();
+            console.log('Message 1:', msg);
+        }
+
+        msg(); 
+        msg1(); 
+
+        //Example 3
+        
+
+    </script>
+</body>
+
+</html>
