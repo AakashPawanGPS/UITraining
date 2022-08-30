@@ -9,7 +9,7 @@
 </head>
 
 <body>
-    <h1>Async Await</h1>
+    <h1>Async and Await in Javascript</h1>
     <script>
 
         //Example 1
@@ -25,7 +25,7 @@
 
         display()
 
-        //Example 2
+        // Example 2
 
         function helloWorld() {
             return new Promise(resolve => {
@@ -38,6 +38,7 @@
         const msg = async function () { //Async Function Expression
             const msg = await helloWorld();
             console.log('Message:', msg);
+            msg1();
         }
 
         const msg1 = async () => { //Async Arrow Function
@@ -46,9 +47,8 @@
         }
 
         msg(); 
-        msg1(); 
 
-        //Example 3
+        // Example 3
         
 
     </script>
