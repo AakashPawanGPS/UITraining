@@ -1,0 +1,27 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(145, 145, 235, 0.689);
+    padding: 1.3rem;
+    position: sticky;
+    top: -10px;
+    color: aliceblue;
+}
+
+.logo{
+    flex: 2;
+}
+
+.options{
+    flex: 1;
+}
+
+ul{
+    display: flex;
+    justify-content: space-evenly;  
+}
+
+li{
+    list-style: none;
+    cursor: pointer;
+}
