@@ -1,0 +1,16 @@
+.container{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: rgba(203, 55, 55, 0.441);
+    padding: 1rem 2rem;
+    color: rgba(40, 68, 209, 0.674);
+    border-bottom: 2px solid rgb(222, 13, 13);
+}
+
+h2{
+    margin-bottom: 0.5rem;
+    color: rgba(255, 0, 212, 0.79);
+}
+
+.imp{
+    color: blue;
+}
