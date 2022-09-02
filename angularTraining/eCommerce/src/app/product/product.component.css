@@ -9,25 +9,38 @@
     border-radius: 1rem;
     color: rgba(133, 101, 57, 0.568);
     box-shadow: 2px 2px 5px rgba(77, 71, 71, 0.461);
+    transition: width 2s ease-in-out;
+    transition: margin 0.3s ease-in-out;
 }
 
 .card:hover{
-    width: 90%;
-}
+    width: 100%;    
+    margin-left: -1px;  
+}  
 
 .desc{
     padding: 2rem;
 }
 img{
     width: 40%;
+    transition: width 0.2s ease-in-out;
+}
+
+img:hover{
+    width: 45%;
 }
 
 button{
-    border: 1px solid rgb(83, 144, 194);
+    border: 2px solid rgb(83, 144, 194);
     background-color: rgba(81, 155, 180, 0.776);
     margin: 2rem 0;
     padding:0.5rem 1rem;
     border-radius: 0.5rem;
     color: aliceblue;
     cursor: pointer;
+}
+
+button:hover{
+    background-color: rgb(214, 214, 127);
+    color: rgb(83, 144, 194);
 }
