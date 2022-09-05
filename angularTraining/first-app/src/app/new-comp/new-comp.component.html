@@ -4,18 +4,25 @@
 <h1>{{myfunc()}}</h1>
 <input type="text" placeholder="{{placeholder}}" [disabled] = "disabled" >
 
+
+<!-- Class Binding -->
 <h2 [class]="strClass">Hii I am Aakash </h2>
 <h3 [class]="objClass">Hii I am Aakash </h3>
 <h5 [class]="arrClass">Hii I am Aakash </h5>
 
 <h6 [class.class2]="true">New Class</h6>
 
+<!-- Style Binding -->
 <p [style.color]="'red'">Hii This is Aakash </p>
 <p [style.fontSize.rem]="'3'">Hii This is Aakash </p>
 <p [style]="{
     color:'red',
     fontSize:'4rem'
 }">Hii This is Aakash </p>
-<p>Hii This is Aakash </p>
-<p>Hii This is Aakash </p>
+
+
+<p (mouseover)="clicked()" [style.cursor]="'pointer'"> Click Mee </p>
+<input type="text" (keyup)="keyUped($event)" (focus)="focussed() ">
+
+<p id="newText">Hii This is Aakash </p>
 <p>Hii This is Aakash </p>

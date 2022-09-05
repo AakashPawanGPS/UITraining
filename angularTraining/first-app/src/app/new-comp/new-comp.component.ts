@@ -29,6 +29,16 @@ export class NewCompComponent implements OnInit {
   }
 
   clicked(){
-    alert("Button is Clicked")
+    console.log("clicked");
+    
+    // alert("Button is Clicked")
+  }
+
+  keyUped(e: any){
+    console.log(e.target.value)
+  }
+
+  focussed(){
+    console.log("Focus...");
   }
 }
