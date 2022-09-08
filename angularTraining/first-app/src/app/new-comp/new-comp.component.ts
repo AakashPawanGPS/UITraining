@@ -11,6 +11,7 @@ export class NewCompComponent implements OnInit {
   sum = 20
   placeholder = "Enter Your Father's Name"
   disabled:boolean = true;
+  name = "aaskash"
 
   strClass = "active class1"
   objClass = {

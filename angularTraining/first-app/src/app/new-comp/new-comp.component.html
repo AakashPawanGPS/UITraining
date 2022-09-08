@@ -25,4 +25,9 @@
 <input type="text" (keyup)="keyUped($event)" (focus)="focussed() ">
 
 <p id="newText">Hii This is Aakash </p>
+
+<!-- Two Way Binding -->
+<input type="text" [(ngModel)] = "name">
+<p>{{name}}</p>
+
 <p>Hii This is Aakash </p>
